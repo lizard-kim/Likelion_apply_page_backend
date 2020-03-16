@@ -1,0 +1,174 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px;
+  margin: 0; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px;
+  margin: 0; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal;
+  margin: 0; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px;
+  margin: 0; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal;
+  margin: 0; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin: 0; }
+
+p {
+  font-size: 16px;
+  margin: 0; }
+
+@media (max-width: 767px) {
+  h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -0.5px;
+    margin: 0; }
+  h2 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: normal;
+    margin: 0; }
+  h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.3px;
+    margin: 0; }
+  h4 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: normal;
+    margin: 0; }
+  h5 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin: 0; }
+  h6 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0; }
+  p {
+    font-size: 12px;
+    margin: 0; } }
+
+.applyWrapper {
+  height: 100%;
+  background: url("../lion.png") center center/cover no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black; }
+
+.apply {
+  display: flex;
+  flex-direction: column; }
+  .apply .title {
+    margin-top: 10%;
+    text-align: center;
+    color: white; }
+    .apply .title hr {
+      width: 80%;
+      border: solid 1px white;
+      margin: 20px auto; }
+
+.applyCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  margin: 20px 10%;
+  padding: 3% 5%;
+  background-color: #ebebeb; }
+  .applyCard__title {
+    margin-bottom: 20px; }
+  .applyCard__userinfo {
+    display: flex;
+    flex-direction: column; }
+    .applyCard__userinfo input {
+      font-size: 16px; }
+    .applyCard__userinfo .name {
+      max-width: 100px; }
+    .applyCard__userinfo .schoolId {
+      max-width: 200px; }
+    .applyCard__userinfo .phone {
+      max-width: 200px; }
+    .applyCard__userinfo .email {
+      max-width: 250px; }
+    .applyCard__userinfo .major {
+      max-width: 200px; }
+    .applyCard__userinfo .techStack {
+      max-width: 800px;
+      height: 100px;
+      overflow-y: scroll; }
+  .applyCard__coverletter {
+    display: flex;
+    flex-direction: column; }
+    .applyCard__coverletter .motivation {
+      max-width: 800px;
+      height: 150px;
+      overflow-y: scroll; }
+    .applyCard__coverletter .idea {
+      max-width: 800px;
+      height: 100px;
+      overflow-y: scroll; }
+  .applyCard__buttonwrapper {
+    margin-top: 30px;
+    text-align: center; }
+    .applyCard__buttonwrapper .submit {
+      margin: auto;
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px; }
+
+/*# sourceMappingURL=apply.css.map */

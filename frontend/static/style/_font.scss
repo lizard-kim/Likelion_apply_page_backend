@@ -1,0 +1,129 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+// _base Font
+$_base-font-family: 'Noto Sans KR', sans-serif;
+
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+h1 {
+    font-family: $_base-font-family;
+    font-size: 96px;
+    font-weight: $bold;
+    line-height: 142px;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+  
+h2 {
+    font-family: $_base-font-family;
+    font-size: 60px;
+    font-weight: $bold;
+    line-height: 88px;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+  
+h3 {
+    font-family: $_base-font-family;
+    font-size: 48px;
+    font-weight: $bold;
+    line-height: 72px;
+    letter-spacing: normal;
+    margin: 0;
+}
+  
+h4 {
+    font-family: $_base-font-family;
+    font-size: 34px;
+    font-weight: $bold;
+    line-height: 50px;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+  
+h5 {
+    font-family: $_base-font-family;
+    font-size: 24px;
+    font-weight: $regular;
+    line-height: 36px;
+    letter-spacing: normal;
+    margin: 0;
+}
+  
+h6 {
+    font-family: $_base-font-family;
+    font-size: 20px;
+    font-weight: $medium;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+
+p{
+    font-size: 16px;
+    margin: 0;
+}
+
+@media ( max-width: 767px ){
+    h1 {
+        font-family: $_base-font-family;
+        font-size: 60px;
+        font-weight: $bold;
+        line-height: 88px;
+        letter-spacing: -0.5px;
+        margin: 0;
+    }
+      
+    h2 {
+        font-family: $_base-font-family;
+        font-size: 48px;
+        font-weight: $bold;
+        line-height: 72px;
+        letter-spacing: normal;
+        margin: 0;
+    }
+      
+    h3 {
+        font-family: $_base-font-family;
+        font-size: 32px;
+        font-weight: $bold;
+        line-height: 50px;
+        letter-spacing: 0.3px;
+        margin: 0;
+    }
+      
+    h4 {
+        font-family: $_base-font-family;
+        font-size: 24px;
+        font-weight: $bold;
+        line-height: 36px;
+        letter-spacing: normal;
+        margin: 0;
+    }
+      
+    h5 {
+        font-family: $_base-font-family;
+        font-size: 20px;
+        font-weight: $regular;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        margin: 0;
+    }
+      
+    h6 {
+        font-family: $_base-font-family;
+        font-size: 16px;
+        font-weight: $medium;
+        margin: 0;
+    }
+    
+    p{
+        font-size: 12px;
+        margin: 0;
+    }
+}

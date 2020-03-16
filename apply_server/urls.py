@@ -20,4 +20,5 @@ import apply.urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('adminpage/', include(apply.urls)),
+    path('', include('frontend.urls')),
 ]

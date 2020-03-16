@@ -1,0 +1,61 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<div class="applyWrapper">
+    <div class="apply">
+        <div class="title">
+            <h3> 멋쟁이 사자처럼 8기 지원하기 </h3>
+            <hr/>
+        </div>
+        <div class="applyCard">
+            <div class="applyCard__title">
+                <h4> 인적사항 </h4>
+            </div>
+            <div class="applyCard__userinfo">
+                <h5> 이름 </h5>
+                <input class="name" type="text" name="name" onChange={this.saveInfo}/>
+                <h5> 학번 </h5>
+                <input class="schoolId" type="text" name="schoolId" onChange={this.saveInfo}/>
+                <h5> 전화번호 </h5>
+                <input class="phone" type="text" name="phoneNumber" onChange={this.saveInfo}/>
+                <h5> 이메일 </h5>
+                <input class="email" type="text" name="email" onChange={this.saveInfo}/>
+                <h5> 관심분야 (전공) </h5>
+                <input class="major" type="text" name="major" onChange={this.saveInfo}/>
+                <h5> 기술 스택 및 경력(개인 프로젝트, 창업 등) </h5>
+                <textarea 
+                    class="techStack"
+                    placeholder="여기에 적으세요"
+                    name="techStack" 
+                    onChange={this.saveInfo}
+                ></textarea>
+            </div>
+            <div class="applyCard__coverletter">
+                <h5> 지원동기 </h5>
+                <textarea 
+                    class="motivation"
+                    placeholder="여기에 적으세요"
+                    name="motivation" 
+                    onChange={this.saveInfo}
+                    maxlength="300"
+                ></textarea>
+                <h5> 창업 아이디어 </h5>
+                <textarea 
+                    class="idea"
+                    placeholder="여기에 적으세요"
+                    name="idea" 
+                    onChange={this.saveInfo}
+                    maxlength="300"
+                ></textarea>
+            </div>
+            <div class="applyCard__buttonwrapper">
+                <button class="submit" onClick={this.submitHandler}>
+                    제출하기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

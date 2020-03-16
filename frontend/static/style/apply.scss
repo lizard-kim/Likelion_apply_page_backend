@@ -1,0 +1,98 @@
+@import './font';
+
+.applyWrapper{
+    height: 100%;
+    background : url('../lion.png') center center / cover no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+.apply{
+    display: flex;
+    flex-direction: column;
+    .title{
+        margin-top: 10%;
+        text-align: center;
+        color: white;
+        hr{
+            width: 80%;
+            border: solid 1px white;
+            margin: 20px auto;
+        }
+    }
+}
+
+.applyCard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    margin: 20px 10%;
+    padding: 3% 5%;
+    background-color: rgb(235, 235, 235);
+
+    &__title{
+        margin-bottom: 20px;
+    }
+
+    &__userinfo{
+        display: flex;
+        flex-direction: column;
+        input{
+            font-size: 16px;
+        }
+        .name{
+            max-width: 100px;
+        }
+        .schoolId{
+            max-width: 200px;
+        }
+        .phone{
+            max-width: 200px;
+        }
+        .email{
+            max-width: 250px;
+        }
+        .major{
+            max-width: 200px;
+        }
+        .techStack{
+            max-width: 800px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+    }
+    &__coverletter{
+        display: flex;
+        flex-direction: column;
+        .motivation{
+            max-width: 800px;
+            height: 150px;
+            overflow-y: scroll;
+        }
+        .idea{
+            max-width: 800px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+    }
+
+    &__buttonwrapper{
+        margin-top: 30px;
+        text-align: center;
+        .submit{
+            margin: auto;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    }
+}

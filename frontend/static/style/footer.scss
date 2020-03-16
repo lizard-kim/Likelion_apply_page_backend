@@ -1,0 +1,53 @@
+@import './font';
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    //justify-content: center;
+    //margin: 0;
+    padding: 40px;
+    color: rgb(151, 151, 151);
+    height: 30vh;
+    background-color: rgb(48, 45, 39);
+    .title{
+        .slogan{
+            font-weight: $light;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        font-weight: $medium;
+        margin-bottom: 20px;
+        point{
+            font-weight: $bold;
+        }
+    }
+    .contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 30%;
+    }
+    hr{
+        width: 80%;
+        border: 0.5px solid rgb(117, 117, 117);
+        align-self: center;
+        margin: 20px;
+    }
+    .tag{
+        p{
+            font-weight: $light;
+            color: rgb(117, 117, 117);
+        }
+    }
+}
+@media ( max-width: 767px ){
+    .footer{
+        .contents{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0;
+        }
+    }
+}
