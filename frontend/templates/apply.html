@@ -12,47 +12,49 @@
             <div class="applyCard__title">
                 <h4> 인적사항 </h4>
             </div>
-            <form method="POST">
+            <form id="form1" enctype="multipart/form-data" method="post">
             {% csrf_token %}
             <div class="applyCard__userinfo">
                 <h5> 이름 </h5>
-                <input class="name" type="text" name="name"/>
+                <input id="data" class="name" type="text" name="name"/>
                 <h5> 학번 </h5>
-                <input class="schoolId" type="text" name="schoolId"/>
+                <input id="data" class="schoolId" type="text" name="schoolId"/>
                 <h5> 전화번호 </h5>
-                <input class="phone" type="text" name="phoneNumber"/>
+                <input id="data" class="phone" type="text" name="phoneNumber"/>
                 <h5> 이메일 </h5>
-                <input class="email" type="text" name="email"/>
+                <input id="data" class="email" type="text" name="email"/>
                 <h5> 관심분야 (전공) </h5>
-                <input class="major" type="text" name="major"/>
+                <input id="data" class="major" type="text" name="major"/>
+                <h5> 시간표 (이미지 파일) </h5>
+                <input id="data" class="table" type="file" name="table"/>
                 <h5> 기술 스택 및 경력(개인 프로젝트, 창업 등) </h5>
                 <textarea 
+                    id="data"
                     class="techStack"
                     placeholder="여기에 적으세요"
                     name="techStack" 
-                
                 ></textarea>
             </div>
             <div class="applyCard__coverletter">
                 <h5> 지원동기 </h5>
                 <textarea 
+                    id="data"
                     class="motivation"
                     placeholder="여기에 적으세요"
                     name="motivation" 
-                
                     maxlength="300"
                 ></textarea>
                 <h5> 창업 아이디어 </h5>
                 <textarea 
+                    id="data"
                     class="idea"
                     placeholder="여기에 적으세요"
                     name="idea" 
-                
                     maxlength="300"
                 ></textarea>
             </div>
             <div class="applyCard__buttonwrapper">
-                <button class="submit">
+                <button type="submit" class="submit">
                     제출하기
                 </button>
             </div>
@@ -60,5 +62,41 @@
         </div>
     </div>
 </div>
+
+<script>
+
+$('form input').keydown(function (e) {
+    if (e.keyCode == 13) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+$(document).ready(function(){
+    $(".submit").on("click", function(e){
+        var blankInput = 0;
+        $("input").each(function(){
+            var $this = $(this)
+            if(!$this.val()){
+                blankInput = 1;
+            }
+        })
+        $("textarea").each(function(){
+            var $this = $(this)
+            if(!$this.val()){
+                blankInput = 1
+            }
+        })
+        if(blankInput){
+            alert("빈칸이 있습니다!")
+            return false
+        }
+        else{
+            return true
+        }
+        
+    })
+})
+</script>
 
 {% endblock content %}

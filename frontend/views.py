@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.core.files.storage import FileSystemStorage
 
 from apply.models import Apply
 
@@ -7,7 +8,8 @@ def main(request):
 
 def apply(request):
 
-    if(request.method=='POST'):
+    if(request.method=='POST' and request.FILES['table']):
+        
         
         name = request.POST.get('name')
         school_id = request.POST.get('schoolId')
@@ -17,7 +19,10 @@ def apply(request):
         tech_stack = request.POST.get('techStack')
         motivation = request.POST.get('motivation')
         idea = request.POST.get('idea')
-        
+        apply_file = request.FILES['table']
+
+        #table = request.POST.get('table')
+
         new_apply = Apply.objects.create(
             name = name,
             school_id = school_id,
@@ -26,7 +31,8 @@ def apply(request):
             major = major,
             tech_stack = tech_stack,
             motivation = motivation,
-            idea = idea
+            idea = idea,
+            table = apply_file
         )
         return redirect('/')
     

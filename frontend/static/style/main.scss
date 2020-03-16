@@ -24,7 +24,7 @@
     /*
     background-image: url('../static/hackyourlife_resize.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% auto; 
     */
 }
 
@@ -91,6 +91,11 @@ hr{
         .text{
             font-weight: $thin;
             margin: 10px;
+        }
+        hr{
+            width: 60%;
+            border: 1px solid #F2A141;
+            margin-left: 0;
         }
     }
     &__content{

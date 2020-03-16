@@ -114,7 +114,7 @@ p {
     color: white; }
     .apply .title hr {
       width: 80%;
-      border: solid 1px white;
+      border: solid 1px #F2A141;
       margin: 20px auto; }
 
 .applyCard {
@@ -130,6 +130,8 @@ p {
   .applyCard__userinfo {
     display: flex;
     flex-direction: column; }
+    .applyCard__userinfo h5 {
+      margin-top: 10px; }
     .applyCard__userinfo input {
       font-size: 16px; }
     .applyCard__userinfo .name {
@@ -146,6 +148,25 @@ p {
       max-width: 800px;
       height: 100px;
       overflow-y: scroll; }
+    .applyCard__userinfo .table {
+      max-width: 500px; }
+      .applyCard__userinfo .table .input {
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 5px 8px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt; }
+      .applyCard__userinfo .table .input:before, .applyCard__userinfo .table .input:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; }
   .applyCard__coverletter {
     display: flex;
     flex-direction: column; }

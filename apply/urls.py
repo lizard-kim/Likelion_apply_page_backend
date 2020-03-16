@@ -9,3 +9,4 @@ router.register('apply', views.ApplyViewSet)
 urlpatterns = [
     path('', include(router.urls)),
 ]
+

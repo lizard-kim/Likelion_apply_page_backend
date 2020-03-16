@@ -9,3 +9,4 @@ class Apply(models.Model):
     tech_stack = models.TextField(blank=True, null=True)
     motivation = models.TextField(blank=True, null=True)
     idea = models.TextField(blank=True, null=True)
+    table = models.ImageField(upload_to="images", blank=True, null=True)
