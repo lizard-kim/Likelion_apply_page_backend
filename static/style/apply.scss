@@ -1,0 +1,124 @@
+@import './font';
+
+.applyWrapper{
+    height: 100%;
+    background : url('../lion.png') center center / cover no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+
+.apply{
+    display: flex;
+    flex-direction: column;
+    .title{
+        margin-top: 10%;
+        text-align: center;
+        color: white;
+        hr{
+            width: 80%;
+            border: solid 1px #F2A141;
+            margin: 20px auto;
+        }
+    }
+}
+
+.applyCard{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    margin: 20px 10%;
+    padding: 3% 5%;
+    background-color: rgb(235, 235, 235);
+
+    &__title{
+        margin-bottom: 20px;
+    }
+
+    &__userinfo{
+        display: flex;
+        flex-direction: column;
+        h5{
+            margin-top: 10px;
+        }
+        input{
+            font-size: 16px;
+        }
+        .name{
+            max-width: 100px;
+        }
+        .schoolId{
+            max-width: 200px;
+        }
+        .phone{
+            max-width: 200px;
+        }
+        .email{
+            max-width: 250px;
+        }
+        .major{
+            max-width: 200px;
+        }
+        .techStack{
+            max-width: 800px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+        .table{
+            max-width: 500px;
+            //margin: 20px;
+            .input{
+                display: inline-block;
+                background: linear-gradient(top, #f9f9f9, #e3e3e3);
+                border: 1px solid #999;
+                border-radius: 3px;
+                padding: 5px 8px;
+                outline: none;
+                white-space: nowrap;
+                -webkit-user-select: none;
+                cursor: pointer;
+                text-shadow: 1px 1px #fff;
+                font-weight: 700;
+                font-size: 10pt;
+            }
+            .input:before, .input:after{
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        }
+    }
+    &__coverletter{
+        display: flex;
+        flex-direction: column;
+        .motivation{
+            max-width: 800px;
+            height: 150px;
+            overflow-y: scroll;
+        }
+        .idea{
+            max-width: 800px;
+            height: 100px;
+            overflow-y: scroll;
+        }
+    }
+
+    &__buttonwrapper{
+        margin-top: 30px;
+        text-align: center;
+        .submit{
+            margin: auto;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    }
+}

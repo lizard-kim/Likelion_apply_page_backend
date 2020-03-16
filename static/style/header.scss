@@ -1,0 +1,33 @@
+@import './font';
+
+.header{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    //background-color: black;
+    overflow: visible;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1440px;
+    padding: 0 6%;
+    margin: 15px auto;
+    color: white;
+    &__logo{
+        h5{
+            font-weight: $bold;
+        }
+    }
+    &__menu{
+        margin-left: 100px;
+        h6{
+            font-weight: $regular;
+        }
+
+    }
+}

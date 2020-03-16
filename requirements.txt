@@ -1,7 +1,17 @@
 asgiref==3.2.3
 certifi==2019.11.28
 Django==3.0.4
+django-appconf==1.0.3
+django-compressor==2.4
 django-cors-headers==3.2.1
+django-sass-processor==0.8
+django-scss==0.6.1
+django-webpack-loader==0.7.0
 djangorestframework==3.11.0
+libsass==0.19.4
+Pillow==7.0.0
 pytz==2019.3
+rcssmin==1.0.6
+rjsmin==1.1.0
+six==1.14.0
 sqlparse==0.3.1

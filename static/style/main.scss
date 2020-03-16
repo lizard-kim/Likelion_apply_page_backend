@@ -1,0 +1,243 @@
+@import './font';
+.wrapper{
+    height: 100%;
+    background : url('../hackyourlife.png') center center / cover no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+
+    .background{
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /*
+    background-image: url('../static/hackyourlife_resize.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    */
+}
+
+hr{
+    width: 100%;
+    border: solid 1px white;
+}
+
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: white;
+
+    &__slogan{
+        margin: 20px 0px;
+        img{
+            width: 300px;
+        }
+    }
+
+    &__name{
+        margin: 10px 0px;
+    }
+
+    &__duedate{
+        margin: 10px 0px;
+    }
+
+    &__applybox{
+        margin: 10px 0px;
+        a{
+            text-decoration: none;
+        }
+        .button{
+            color: white;
+            border: solid 1px white;
+            border-radius: 16px;
+            padding: 4px 8px;
+        }
+    }
+}
+
+.info{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    margin: 5%;
+    //color: white;
+    &__title{
+        margin: 20px 100px;
+        margin-bottom: 10px;
+        .title{
+            font-weight: $medium;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .title_mobile{
+            display: none;
+        }
+        .text{
+            font-weight: $thin;
+            margin: 10px;
+        }
+        hr{
+            width: 60%;
+            border: 1px solid #F2A141;
+            margin-left: 0;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 50vh;
+        margin: 0 100px;
+        //background-color: #383A3F;
+
+        &__first{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            height: 100%;
+            margin: auto;
+            background-color: #383A3F;
+            color: white;
+            .text{
+                margin: 20px;
+                font-weight: $bold;
+            }
+        }
+
+        &__second{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            height: 100%;
+            margin: auto;
+            background-color: #383A3F;
+            color: white;
+            .text{
+                margin: 20px;
+                font-weight: $bold;
+            }
+        }
+        
+        &__third{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            height: 100%;
+            margin: auto;
+            background-color: #383A3F;
+            color: white;
+            .text{
+                margin: 20px;
+                font-weight: $bold;
+            }
+        }
+
+        &__first:hover{
+            background-color: #F2A141;
+        }
+        &__second:hover{
+            background-color: #F2A141;
+        }
+        &__third:hover{
+            background-color: #F2A141;
+        }
+
+
+    }
+    &__end{
+        margin: 20px 100px;
+        margin-left: auto;
+        .text{
+            font-weight: $thin;
+        }
+    }
+    point{
+        color: #F2A141;
+    }
+    
+}
+
+.curi{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    //flex-wrap: wrap;
+    //justify-content: center;
+    margin: 5%;
+    margin-bottom: 0;
+    color: white;
+    &__card{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .elem{
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 5px;
+            justify-content: center;
+        }
+        .elem-top{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            //flex-wrap: wrap;
+            .logo{
+                flex: auto;
+                max-width: 120px;
+            }
+        }
+        .elem-bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            //flex-wrap: wrap;
+            .logo{
+                flex: auto;
+                max-width: 170px;
+            }
+        }
+    }
+    &__title{
+        flex: 1;
+        color: white;
+        text-align: center;
+        .text{
+            font-weight: $medium;
+        }
+        hr{
+            width: 50%;
+            border: 1px solid #F2A141;
+        }
+        .discription{
+            margin: 10px 0;
+            color: rgb(122, 122, 122);
+        }
+    }
+}
+
+@import './main-mobile';
