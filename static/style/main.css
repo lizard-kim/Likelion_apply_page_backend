@@ -139,7 +139,8 @@ hr {
   .mainbox__name {
     margin: 10px 0px; }
   .mainbox__duedate {
-    margin: 10px 0px; }
+    margin: 10px 0px;
+    text-align: center; }
   .mainbox__applybox {
     margin: 10px 0px; }
     .mainbox__applybox a {
