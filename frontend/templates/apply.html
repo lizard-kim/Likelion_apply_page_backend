@@ -10,7 +10,7 @@
         </div>
         <div class="applyCard">
             <div class="applyCard__title">
-                <h4> 인적사항 </h4>
+                <h4> 지원 정보 </h4>
             </div>
             <form id="form1" enctype="multipart/form-data" method="post">
             {% csrf_token %}
@@ -27,7 +27,7 @@
                 <input id="data" class="major" type="text" name="major"/>
                 <h5> 시간표 (이미지 파일) </h5>
                 <input id="data" class="table" type="file" name="table"/>
-                <h5> 기술 스택 및 경력(개인 프로젝트, 창업 등) </h5>
+                <h5> 기술 스택 및 경력(개인 프로젝트, 디자인, 창업 등) </h5>
                 <textarea 
                     id="data"
                     class="techStack"
@@ -92,6 +92,7 @@ $(document).ready(function(){
             return false
         }
         else{
+            alert("멋쟁이 사자처럼 8기 지원이 완료되었습니다! 1일 이내로 확인 문자가 발송됩니다.")
             return true
         }
         

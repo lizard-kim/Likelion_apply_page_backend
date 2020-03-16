@@ -192,6 +192,8 @@ hr {
       .info__content__first .text {
         margin: 20px;
         font-weight: 700; }
+      .info__content__first .hovertext {
+        display: none; }
     .info__content__second {
       display: flex;
       flex-direction: column;
@@ -205,6 +207,8 @@ hr {
       .info__content__second .text {
         margin: 20px;
         font-weight: 700; }
+      .info__content__second .hovertext {
+        display: none; }
     .info__content__third {
       display: flex;
       flex-direction: column;
@@ -218,12 +222,78 @@ hr {
       .info__content__third .text {
         margin: 20px;
         font-weight: 700; }
+      .info__content__third .hovertext {
+        display: none; }
     .info__content__first:hover {
       background-color: #F2A141; }
+      .info__content__first:hover i {
+        display: none; }
+      .info__content__first:hover .text {
+        display: none; }
+      .info__content__first:hover .hovertext {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        font-weight: 400; }
+        .info__content__first:hover .hovertext point {
+          color: white;
+          font-weight: 700; }
+        .info__content__first:hover .hovertext .content {
+          font-weight: 100;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: 16px; }
+          .info__content__first:hover .hovertext .content .left {
+            display: flex;
+            flex-direction: column; }
+          .info__content__first:hover .hovertext .content .right {
+            display: flex;
+            flex-direction: column; }
     .info__content__second:hover {
       background-color: #F2A141; }
+      .info__content__second:hover i {
+        display: none; }
+      .info__content__second:hover .text {
+        display: none; }
+      .info__content__second:hover .hovertext {
+        display: flex;
+        flex-direction: column;
+        padding: 10%; }
+        .info__content__second:hover .hovertext h5 {
+          font-weight: 500; }
+        .info__content__second:hover .hovertext point {
+          color: white;
+          font-weight: 700; }
+        .info__content__second:hover .hovertext .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-top: 16px; }
+          .info__content__second:hover .hovertext .content h6 {
+            font-weight: 400; }
     .info__content__third:hover {
       background-color: #F2A141; }
+      .info__content__third:hover i {
+        display: none; }
+      .info__content__third:hover .text {
+        display: none; }
+      .info__content__third:hover .hovertext {
+        display: flex;
+        flex-direction: column;
+        padding: 10%; }
+        .info__content__third:hover .hovertext h5 {
+          font-weight: 500; }
+        .info__content__third:hover .hovertext point {
+          color: white;
+          font-weight: 700; }
+        .info__content__third:hover .hovertext .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin-top: 16px; }
+          .info__content__third:hover .hovertext .content h6 {
+            font-weight: 400; }
   .info__end {
     margin: 20px 100px;
     margin-left: auto; }
@@ -383,7 +453,8 @@ p {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646; }
+    background-color: #464646;
+    margin-bottom: -20px; }
     .wrapper .background {
       display: block;
       position: fixed;
@@ -429,14 +500,14 @@ p {
         padding: 4px 8px; }
   .info {
     display: flex;
-    height: 90vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     background-color: #f7f7f7;
     margin: 5%; }
     .info__title {
-      margin: 20px;
-      margin-bottom: 20px; }
+      margin: 10px;
+      margin-bottom: 15px; }
       .info__title .title {
         display: none; }
       .info__title .title_mobile {
@@ -450,52 +521,128 @@ p {
       flex-direction: column;
       justify-content: center;
       height: 100%;
-      margin: 20px 0; }
+      margin: 10px 0;
+      margin-bottom: 0; }
       .info__content__first {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
         flex: 1;
         margin: 0;
         background-color: #383A3F;
         color: white; }
         .info__content__first .text {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           font-weight: 700; }
+        .info__content__first .hovertext {
+          display: none; }
       .info__content__second {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
         flex: 1;
         margin: 0;
         background-color: #383A3F;
         color: white; }
         .info__content__second .text {
-          margin: 20px;
+          margin: 10px;
           font-weight: 700; }
+        .info__content__second .hovertext {
+          display: none; }
       .info__content__third {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
         flex: 1;
         margin: 0;
         background-color: #383A3F;
         color: white; }
         .info__content__third .text {
-          margin: 20px;
+          margin: 0px;
           font-weight: 700; }
+        .info__content__third .hovertext {
+          display: none; }
       .info__content__first:hover {
         background-color: #F2A141; }
+        .info__content__first:hover i {
+          display: none; }
+        .info__content__first:hover .text {
+          display: none; }
+        .info__content__first:hover .hovertext {
+          display: flex;
+          flex-direction: column;
+          padding: 4%;
+          font-weight: 400; }
+          .info__content__first:hover .hovertext point {
+            color: white;
+            font-weight: 700; }
+          .info__content__first:hover .hovertext .content {
+            font-weight: 100;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 16px; }
+            .info__content__first:hover .hovertext .content .left {
+              display: flex;
+              flex-direction: column; }
+              .info__content__first:hover .hovertext .content .left h5 {
+                font-size: 80%; }
+            .info__content__first:hover .hovertext .content .right {
+              display: flex;
+              flex-direction: column; }
+              .info__content__first:hover .hovertext .content .right h5 {
+                font-size: 80%; }
       .info__content__second:hover {
         background-color: #F2A141; }
+        .info__content__second:hover i {
+          display: none; }
+        .info__content__second:hover .text {
+          display: none; }
+        .info__content__second:hover .hovertext {
+          display: flex;
+          flex-direction: column;
+          padding: 4%; }
+          .info__content__second:hover .hovertext h5 {
+            font-weight: 500; }
+          .info__content__second:hover .hovertext point {
+            color: white;
+            font-weight: 700; }
+          .info__content__second:hover .hovertext .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 16px; }
+            .info__content__second:hover .hovertext .content h6 {
+              font-weight: 400;
+              font-size: 80%; }
       .info__content__third:hover {
         background-color: #F2A141; }
+        .info__content__third:hover i {
+          display: none; }
+        .info__content__third:hover .text {
+          display: none; }
+        .info__content__third:hover .hovertext {
+          display: flex;
+          flex-direction: column;
+          padding: 4%; }
+          .info__content__third:hover .hovertext h5 {
+            font-weight: 500; }
+          .info__content__third:hover .hovertext point {
+            color: white;
+            font-weight: 700; }
+          .info__content__third:hover .hovertext .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 16px; }
+            .info__content__third:hover .hovertext .content h6 {
+              font-weight: 400; }
     .info__end {
       display: none;
       margin: 20px 100px;
