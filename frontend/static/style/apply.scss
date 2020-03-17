@@ -32,10 +32,14 @@
     flex: 1;
     margin: 20px 10%;
     padding: 3% 5%;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(226, 226, 226);
 
     &__title{
         margin-bottom: 20px;
+        .discription{
+            margin: 4px;
+            color: gray;
+        }
     }
 
     &__userinfo{
@@ -43,24 +47,26 @@
         flex-direction: column;
         h5{
             margin-top: 10px;
+            point{
+                font-size: 12px;
+                color: gray;
+            }
         }
         input{
+            background-color: rgb(218, 218, 218);
             font-size: 16px;
-        }
-        .name{
-            max-width: 100px;
-        }
-        .schoolId{
-            max-width: 200px;
-        }
-        .phone{
-            max-width: 200px;
-        }
-        .email{
+            border-radius: 10px;
+            padding: 4px;
+            border: 1px solid #F2A141;
             max-width: 250px;
         }
-        .major{
-            max-width: 200px;
+        input:focus {outline:none;}
+        textarea:focus {outline:none;}
+        textarea{
+            border: 1px solid #F2A141;
+            font-size: 12px;
+            padding: 4px;
+            background-color: rgb(218, 218, 218);
         }
         .techStack{
             max-width: 800px;
@@ -94,6 +100,14 @@
     &__coverletter{
         display: flex;
         flex-direction: column;
+        textarea:focus {outline:none;}
+
+        textarea{
+            border: 1px solid #F2A141;
+            font-size: 12px;
+            padding: 4px;
+            background-color: rgb(218, 218, 218);
+        }
         .motivation{
             max-width: 800px;
             height: 150px;
@@ -114,11 +128,12 @@
             background-color: rgb(0, 0, 0);
             border: none;
             color: white;
-            padding: 8px 16px;
+            padding: 12px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 20px;
+            cursor: pointer;
         }
     }
 }

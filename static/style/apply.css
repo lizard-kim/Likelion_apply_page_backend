@@ -124,26 +124,36 @@ p {
   flex: 1;
   margin: 20px 10%;
   padding: 3% 5%;
-  background-color: #ebebeb; }
+  background-color: #e2e2e2; }
   .applyCard__title {
     margin-bottom: 20px; }
+    .applyCard__title .discription {
+      margin: 4px;
+      color: gray; }
   .applyCard__userinfo {
     display: flex;
     flex-direction: column; }
     .applyCard__userinfo h5 {
       margin-top: 10px; }
+      .applyCard__userinfo h5 point {
+        font-size: 12px;
+        color: gray; }
     .applyCard__userinfo input {
-      font-size: 16px; }
-    .applyCard__userinfo .name {
-      max-width: 100px; }
-    .applyCard__userinfo .schoolId {
-      max-width: 200px; }
-    .applyCard__userinfo .phone {
-      max-width: 200px; }
-    .applyCard__userinfo .email {
+      background-color: #dadada;
+      font-size: 16px;
+      border-radius: 10px;
+      padding: 4px;
+      border: 1px solid #F2A141;
       max-width: 250px; }
-    .applyCard__userinfo .major {
-      max-width: 200px; }
+    .applyCard__userinfo input:focus {
+      outline: none; }
+    .applyCard__userinfo textarea:focus {
+      outline: none; }
+    .applyCard__userinfo textarea {
+      border: 1px solid #F2A141;
+      font-size: 12px;
+      padding: 4px;
+      background-color: #dadada; }
     .applyCard__userinfo .techStack {
       max-width: 800px;
       height: 100px;
@@ -170,6 +180,13 @@ p {
   .applyCard__coverletter {
     display: flex;
     flex-direction: column; }
+    .applyCard__coverletter textarea:focus {
+      outline: none; }
+    .applyCard__coverletter textarea {
+      border: 1px solid #F2A141;
+      font-size: 12px;
+      padding: 4px;
+      background-color: #dadada; }
     .applyCard__coverletter .motivation {
       max-width: 800px;
       height: 150px;
@@ -186,10 +203,11 @@ p {
       background-color: black;
       border: none;
       color: white;
-      padding: 8px 16px;
+      padding: 12px 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
-      font-size: 16px; }
+      font-size: 20px;
+      cursor: pointer; }
 
 /*# sourceMappingURL=apply.css.map */

@@ -1,7 +1,7 @@
 @import './font';
 .wrapper{
     height: 100%;
-    background : url('../hackyourlife.png') center center / cover no-repeat;
+    background : url('../hackyourlife.jpg') center center / cover no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,6 +53,8 @@ hr{
 
     &__duedate{
         margin: 10px 0px;
+        text-align: center;
+        
     }
 
     &__applybox{
@@ -120,6 +122,9 @@ hr{
                 margin: 20px;
                 font-weight: $bold;
             }
+            .hovertext{
+                display: none;
+            }
         }
 
         &__second{
@@ -135,6 +140,9 @@ hr{
             .text{
                 margin: 20px;
                 font-weight: $bold;
+            }
+            .hovertext{
+                display: none;
             }
         }
         
@@ -152,16 +160,108 @@ hr{
                 margin: 20px;
                 font-weight: $bold;
             }
+            .hovertext{
+                display: none;
+            }
         }
 
         &__first:hover{
             background-color: #F2A141;
+            i{
+                display: none;
+            }
+            .text{
+                display: none;
+            }
+            .hovertext{
+                display: flex;
+                flex-direction: column;
+                padding: 10%;
+                font-weight: $regular;
+                point{
+                    color: white;
+                    font-weight: $bold;
+                }
+                .content{
+                    font-weight: $thin;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-top: 16px;
+                    .left{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .right{
+                        display: flex;
+                        flex-direction: column;
+
+                    }
+                }
+            }
         }
+
         &__second:hover{
             background-color: #F2A141;
+            i{
+                display: none;
+            }
+            .text{
+                display: none;
+            }
+            .hovertext{
+                display: flex;
+                flex-direction: column;
+                padding: 10%;
+                h5{
+                    font-weight: $medium;
+                }
+                point{
+                    color: white;
+                    font-weight: $bold;
+                }
+                .content{
+                    h6{
+                        font-weight: $regular;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-top: 16px;
+                }
+            }
+
         }
         &__third:hover{
             background-color: #F2A141;
+            i{
+                display: none;
+            }
+            .text{
+                display: none;
+            }
+            .hovertext{
+                display: flex;
+                flex-direction: column;
+                padding: 10%;
+                h5{
+                    font-weight: $medium;
+                }
+                point{
+                    color: white;
+                    font-weight: $bold;
+                }
+                
+                .content{
+                    h6{
+                        font-weight: $regular;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-top: 16px;
+                }
+            }
         }
 
 

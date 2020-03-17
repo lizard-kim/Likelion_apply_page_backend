@@ -10,7 +10,8 @@
         </div>
         <div class="applyCard">
             <div class="applyCard__title">
-                <h4> 지원 정보 </h4>
+                <h4> 지원자 정보 </h4>
+                <p class="discription">* 지원과정에서 수집되는 개인정보는 멋쟁이 사자처럼 at DGIST 8기 선발과정에 사용되며, 선발이 완료된 이후, 지체없이 파기됩니다.</p>
             </div>
             <form id="form1" enctype="multipart/form-data" method="post">
             {% csrf_token %}
@@ -21,7 +22,7 @@
                 <input id="data" class="schoolId" type="text" name="schoolId"/>
                 <h5> 전화번호 </h5>
                 <input id="data" class="phone" type="text" name="phoneNumber"/>
-                <h5> 이메일 </h5>
+                <h5> 이메일 <point>(가급적 DGIST 이메일을 입력해주세요)</point> </h5>
                 <input id="data" class="email" type="text" name="email"/>
                 <h5> 관심분야 (전공) </h5>
                 <input id="data" class="major" type="text" name="major"/>
@@ -31,7 +32,7 @@
                 <textarea 
                     id="data"
                     class="techStack"
-                    placeholder="여기에 적으세요"
+                    placeholder="자유롭게 적어주세요"
                     name="techStack" 
                 ></textarea>
             </div>
@@ -40,7 +41,7 @@
                 <textarea 
                     id="data"
                     class="motivation"
-                    placeholder="여기에 적으세요"
+                    placeholder="300자 내외로 입력해주세요"
                     name="motivation" 
                     maxlength="300"
                 ></textarea>
@@ -48,7 +49,7 @@
                 <textarea 
                     id="data"
                     class="idea"
-                    placeholder="여기에 적으세요"
+                    placeholder="자신의 아이디어를 자유롭게 300자 내외로 입력해주세요"
                     name="idea" 
                     maxlength="300"
                 ></textarea>
