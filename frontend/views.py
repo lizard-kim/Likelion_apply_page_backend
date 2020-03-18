@@ -9,13 +9,15 @@ def main(request):
     return render(request, 'main.html')
 
 def apply(request):
-    if(request.method=='POST' and request.FILES['table']):
+    if(request.method=='POST' and request.FILES.get('table')):
         name = request.POST.get('name')
         school_id = request.POST.get('schoolId')
         phone_number = request.POST.get('phoneNumber')
         email = request.POST.get('email')
         major = request.POST.get('major')
+        fglp = request.POST.get('fglp')
         tech_stack = request.POST.get('techStack')
+        expectation = request.POST.get('expectation')
         motivation = request.POST.get('motivation')
         idea = request.POST.get('idea')
         apply_file = request.FILES['table']
@@ -35,10 +37,12 @@ def apply(request):
             phone_number = phone_number,
             email = email,
             major = major,
+            fglp = fglp,
+            table = apply_file,
             tech_stack = tech_stack,
             motivation = motivation,
+            expectation = expectation,
             idea = idea,
-            table = apply_file
         )
 
         return redirect('/')

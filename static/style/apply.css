@@ -186,7 +186,9 @@ p {
       border: 1px solid #F2A141;
       font-size: 12px;
       padding: 4px;
-      background-color: #dadada; }
+      background-color: #dadada;
+      max-width: 800px;
+      height: 100px; }
     .applyCard__coverletter .motivation {
       max-width: 800px;
       height: 150px;

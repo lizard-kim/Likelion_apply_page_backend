@@ -11,7 +11,7 @@
         <div class="applyCard">
             <div class="applyCard__title">
                 <h4> 지원자 정보 </h4>
-                <p class="discription">* 지원과정에서 수집되는 개인정보는 멋쟁이 사자처럼 at DGIST 8기 선발과정에 사용되며, 선발이 완료된 이후, 지체없이 파기됩니다.</p>
+                <p class="discription">* 지원과정에서 수집되는 개인정보는 멋쟁이 사자처럼 at DGIST 8기 선발과정에 사용되며, 선발이 완료된 이후, 지체없이 파기됩니다.</p>             
             </div>
             <form id="form1" enctype="multipart/form-data" method="post">
             {% csrf_token %}
@@ -28,6 +28,8 @@
                 <input id="data" class="major" type="text" name="major"/>
                 <h5> 시간표 (이미지 파일) </h5>
                 <input id="data" class="table" type="file" name="table"/>
+                <h5> 2020년 FGLP 참여 여부 <point>(예, 아니오로 답해주세요.)</point> </h5>
+                <input id="data" class="fglp" type="text" name="fglp"/>
                 <h5> 기술 스택 및 경력(개인 프로젝트, 디자인, 창업 등) </h5>
                 <textarea 
                     id="data"
@@ -43,15 +45,23 @@
                     class="motivation"
                     placeholder="300자 내외로 입력해주세요"
                     name="motivation" 
-                    maxlength="300"
+                    maxlength="600"
                 ></textarea>
-                <h5> 창업 아이디어 </h5>
+                <h5> 멋사 활동을 통해 기대하는 점 </h5>
+                <textarea 
+                    id="data"
+                    class="expectation"
+                    placeholder="100자 내외로 입력해주세요"
+                    name="expectation" 
+                    maxlength="200"
+                ></textarea>
+                <h5> 창업 아이디어 (선택 문항)</h5>
                 <textarea 
                     id="data"
                     class="idea"
                     placeholder="자신의 아이디어를 자유롭게 300자 내외로 입력해주세요"
                     name="idea" 
-                    maxlength="300"
+                    maxlength="600"
                 ></textarea>
             </div>
             <div class="applyCard__buttonwrapper">
@@ -78,6 +88,7 @@ $(document).ready(function(){
         var blankInput = 0;
         $("input").each(function(){
             var $this = $(this)
+            //console.log($this.val())
             if(!$this.val()){
                 blankInput = 1;
             }
@@ -85,7 +96,9 @@ $(document).ready(function(){
         $("textarea").each(function(){
             var $this = $(this)
             if(!$this.val()){
-                blankInput = 1
+                if($this.attr("class")!="idea"){
+                    blankInput = 1
+                }
             }
         })
         if(blankInput){
