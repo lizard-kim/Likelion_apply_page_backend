@@ -1,0 +1,28 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<div class="header">
+    <div class="header__navbar">
+        <h4> LIKE LION @ DGIST ADMIN </h4>
+    </div>
+</div>
+
+<div class="adminlist">
+    {% if user.is_authenticated %}
+    <div class="apply_list">
+        {% for info in apply_info %}
+        <a href="/adminlist/{{info.id}}">
+        <div class="apply_list__elem">
+            <p class="id"> {{info.id}} </p>
+            <p class="name"> 이름 : {{info.name}}</p>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+        <h1> login please </h1>
+    {% endif %}
+</div>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin page</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <h1> you are admin </h1>
+        {% for info in apply_info %}
+            <p> id: {{info.id}}
+            <p> 이름 : {{info.name}}</p>
+            <p> 학번 : {{info.school_id}}</p>
+            <p> 전화번호 : {{info.phone_number}}</p>
+            <p> 이메일 : {{info.email}}</p>
+            <p> 전공 : {{info.major}}</p>
+            <p> 기술스택 : {{info.tech_stack}}</p>
+            <p> 지원동기 : {{info.motivation}}</p>
+            <p> 창업아이디어 : {{info.idea}}</p>
+            <p> 시간표 </p>
+            <img src={{info.table.url}} style="width:700px"/>
+            <hr />
+        {% endfor %}
+
+    {% else %}
+        <h1> login please </h1>
+
+    {% endif %}
+
+</body>
+</html>

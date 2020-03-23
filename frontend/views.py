@@ -63,8 +63,21 @@ def login(request):
     else:
         return render(request, 'login.html')
 
+
+def detail(request, id):
+    apply_info = Apply.objects.filter(id = id)
+    return render(request, 'detail.html',{
+        'apply_info': apply_info
+    })
+
 def admin(request):
     apply_info = Apply.objects.all()
     return render(request, 'admin.html', {
         'apply_info': apply_info
+    })
+
+def adminlist(request):
+    apply_info = Apply.objects.all()
+    return render(request, 'adminlist.html',{
+        'apply_info' : apply_info
     })

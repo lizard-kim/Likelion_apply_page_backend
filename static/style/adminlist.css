@@ -1,0 +1,134 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142px;
+  letter-spacing: -1.5px;
+  margin: 0; }
+
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -0.5px;
+  margin: 0; }
+
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: normal;
+  margin: 0; }
+
+h4 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.3px;
+  margin: 0; }
+
+h5 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: normal;
+  margin: 0; }
+
+h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  margin: 0; }
+
+p {
+  font-size: 16px;
+  margin: 0; }
+
+@media (max-width: 767px) {
+  h1 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: -0.5px;
+    margin: 0; }
+  h2 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: normal;
+    margin: 0; }
+  h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.3px;
+    margin: 0; }
+  h4 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: normal;
+    margin: 0; }
+  h5 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    margin: 0; }
+  h6 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0; }
+  p {
+    font-size: 12px;
+    margin: 0; } }
+
+.header {
+  display: flex;
+  flex-direction: column; }
+  .header__navbar {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 8px 50px; }
+
+.adminlist {
+  flex: 1;
+  justify-content: center;
+  margin: 0 300px; }
+  .adminlist .apply_list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 100px 0; }
+    .adminlist .apply_list a {
+      text-decoration: none; }
+    .adminlist .apply_list__elem {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 8px;
+      background-color: lightgray;
+      border: 1px black solid;
+      color: black; }
+      .adminlist .apply_list__elem .id {
+        width: 4%;
+        border-right: 1px black solid; }
+      .adminlist .apply_list__elem .name {
+        padding-left: 10px;
+        width: 90%; }
+
+/*# sourceMappingURL=adminlist.css.map */

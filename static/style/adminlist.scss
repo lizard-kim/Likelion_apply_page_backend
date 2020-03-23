@@ -1,0 +1,46 @@
+@import './font';
+
+.header{
+    display: flex;
+    flex-direction: column;
+    &__navbar{
+        flex: 1;
+        background-color: black;
+        color: white;
+        padding: 8px 50px;
+    }
+}
+
+.adminlist{
+    flex: 1;
+    justify-content: center;
+    //min-height: 80%;
+    margin: 0 300px;
+    .apply_list{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: 100px 0;
+        a{
+            text-decoration: none;
+        }
+        &__elem{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 8px;
+            background-color: rgb(211, 211, 211);
+            border: 1px black solid;
+            color: black;
+            .id{
+                width: 4%;
+                //text-align: center;
+                border-right: 1px black solid;
+            }
+            .name{
+                padding-left: 10px;
+                width: 90%;
+            }
+        }
+    }
+}
